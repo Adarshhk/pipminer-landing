@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --font-primary : "DM Serif Display";
+  --font-secondary : "Manrope", sans-serif;
+  --color-custom-white : #DFDFDF;
+  --color-custom-yellow : #C0ED64;
+  --color-custom-black : #030504;
+}
+
+body{
+  background-color: #030504;
+  scroll-behavior: smooth;
+}
+
+button{
+  cursor: pointer;
+}
+
+.no-scrollbar{
+  ::-webkit-scrollbar {
+  display: none;
+}
+}
