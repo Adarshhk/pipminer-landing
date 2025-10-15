@@ -18,7 +18,7 @@
         <div class="flex flex-col lg:flex-row gap-8 mt-16 items-center">
             <!-- card-1 -->
 
-            <div class="bg-gradient-to-r from-[#8E9EAB] h-fit to-[#EEF2F3] rounded-lg p-10 py-16 space-y-8 ">
+            <!-- <div class="bg-gradient-to-r from-[#8E9EAB] h-fit to-[#EEF2F3] rounded-lg p-10 py-16 space-y-8 ">
                 <div class="space-y-4">
 
                     <p class="font-bold text-[19.2px] text-[#222222] font-secondary">₹5L – ₹10 Lakh</p>
@@ -34,14 +34,29 @@
                 </div>
 
 
+            </div> -->
+            <div class="bg-gradient-to-r h-fit from-[#8E9EAB] to-[#EEF2F3] rounded-lg p-10 py-16 space-y-8 ">
+                <div class="space-y-4">
+
+                    <p class="font-bold text-[19.2px] text-[#222222] font-secondary">₹1 – ₹5 Lakh</p>
+                    <p class="font-[500] text-[16px] text-[#222222] font-secondary">Start small. Watch your money work.
+                    </p>
+
+                </div>
+                <hr class="text-[#22222211] " />
+                <div>
+                    <p class="font-primary text-[#222222] text-[43px]">17%</p>
+                    <p class="font-[500] text-[19.2px] text-[#222222] font-secondary">of your capital for 1 year
+                    </p>
+                </div>
             </div>
 
 
             <div class="bg-gradient-to-r w-full lg:w-fit from-[#8E9EAB] to-[#EEF2F3] rounded-lg p-10 py-16 space-y-8 ">
                 <div class="space-y-4">
 
-                    <p class="font-bold text-[19.2px] text-[#222222] font-secondary">₹10 Lakh+</p>
-                    <p class="font-[500] text-[16px] text-[#222222] font-secondary">Go big. Maximize returns.
+                    <p class="font-bold text-[19.2px] text-[#222222] font-secondary">₹5L – ₹10 Lakh</p>
+                    <p class="font-[500] text-[16px] text-[#222222] font-secondary">Invest more. Pay less. Grow faster.
                     </p>
 
                 </div>
@@ -61,8 +76,8 @@
             <div class="bg-gradient-to-r h-fit from-[#8E9EAB] to-[#EEF2F3] rounded-lg p-10 py-16 space-y-8 ">
                 <div class="space-y-4">
 
-                    <p class="font-bold text-[19.2px] text-[#222222] font-secondary">₹1 – ₹5 Lakh</p>
-                    <p class="font-[500] text-[16px] text-[#222222] font-secondary">Start small. Watch your money work.
+                    <p class="font-bold text-[19.2px] text-[#222222] font-secondary">₹10 Lakh+</p>
+                    <p class="font-[500] text-[16px] text-[#222222] font-secondary">Go big. Maximize returns.
                     </p>
 
                 </div>

@@ -33,7 +33,7 @@
 
                 <!-- Company -->
 
-                <div>
+                <div class="hidden lg:block">
 
                 </div>
                 <!-- Utilities -->

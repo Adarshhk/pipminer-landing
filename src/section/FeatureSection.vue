@@ -1,5 +1,5 @@
 <template>
-    <div class="h-fit lg:min-h-[120vh] flex items-center justify-center flex-col">
+    <div class="h-full lg:min-h-[120vh] flex items-center justify-center flex-col">
         <div class="h-[2px] w-full bg-gradient-to-r from-[#00000000] via-[#4A4444] to-[#00000000]" />
         <div
             class="h-[90%] lg:h-[80%] p-8 lg:p-0 lg:px-16 w-full  bg-gradient-to-r from-black via-[#131313] to-black grid lg:grid-cols-2 grid-cols-1">
