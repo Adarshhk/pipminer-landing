@@ -2,13 +2,13 @@
     <div class="items-center justify-center flex-col p-8 lg:p-24 bg-custom-black ">
         <p
             class="uppercase tracking-[23%] text-center font-secondary font-[500] text-[14px] lg:text-[19.2px] text-white">
-            Trusted. Transparent. Verifiable.
+            What You See is What You Get!
         </p>
 
         <h1
             class="mt-8 text-center font-[400] max-w-6xl mx-auto text-[28px] lg:text-[36px] text-white leading-tight  font-primary">
-            Every return, every number, every trade is transparent and verifiable. No hidden data, no inflated results —
-            just real growth, backed by proof you can see.
+            No magic tricks, no hidden cards. We show you every trade and every result , because real growth shouldn't
+            be a mystery novel.
         </h1>
 
         <!-- Section indicators -->

@@ -12,11 +12,20 @@
                 <div ref="frontContentRef"
                     class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-[80%] p-4 flex flex-col justify-center items-center gap-6 text-center text-white z-[60]">
                     <h1 class="font-[400] text-[48px] lg:text-[80px] leading-tight font-primary">
-                        Those who automate, accumulate.
+                        those who automate, accumulate.
                     </h1>
                     <p class="font-secondary font-[500] text-[16px] lg:text-[20px] max-w-3xl">
-                        Automate strategy because smart never waits for luck.
+                        if you can watch gold move then why aren't you letting it earn for you?
                     </p>
+                </div>
+
+                <!-- Scroll Down Indicator -->
+                <div ref="scrollIndicatorRef"
+                    class="absolute bottom-8 left-1/2 -translate-x-1/2 z-[70] flex flex-col items-center gap-2">
+                    <span class="text-white text-sm font-secondary tracking-wider uppercase">Scroll</span>
+                    <div class="scroll-indicator">
+                        <div class="scroll-line"></div>
+                    </div>
                 </div>
 
                 <!-- Left Door -->
@@ -34,8 +43,6 @@
             <div ref="revealSectionRef" class="w-full h-screen absolute top-0 opacity-0 z-40 overflow-hidden">
                 <!-- Gold Background -->
                 <img src="/webp/gold_bg.webp" alt="Gold Background" class="w-full h-full object-cover" />
-
-
 
                 <!-- Content Container -->
                 <div ref="contentRef"
@@ -79,6 +86,7 @@ const rightDoorRef = ref(null);
 const revealSectionRef = ref(null);
 const contentRef = ref(null);
 const frontContentRef = ref(null);
+const scrollIndicatorRef = ref(null);
 
 let timeline = null;
 
@@ -93,6 +101,25 @@ onMounted(() => {
         delay: 0.3,
     });
 
+    // Animate scroll indicator
+    gsap.from(scrollIndicatorRef.value, {
+        y: -20,
+        opacity: 0,
+        ease: 'power2.out',
+        duration: 1,
+        delay: 1.5,
+    });
+
+    // Continuous bounce animation for scroll indicator
+    gsap.to(scrollIndicatorRef.value, {
+        y: 10,
+        repeat: -1,
+        yoyo: true,
+        duration: 1.5,
+        ease: 'power1.inOut',
+        delay: 2,
+    });
+
     timeline = gsap.timeline({
         scrollTrigger: {
             trigger: containerRef.value,
@@ -102,6 +129,12 @@ onMounted(() => {
             pin: true,
         },
     });
+
+    // Fade out scroll indicator
+    timeline.to(scrollIndicatorRef.value, {
+        opacity: 0,
+        ease: 'power2.in',
+    }, 0);
 
     // Fade out and move up front content
     timeline.to(frontContentRef.value, {
@@ -136,8 +169,6 @@ onMounted(() => {
         ease: 'power2.inOut',
     }, 0.3);
 
-
-
     // New content animation
     timeline.from(contentRef.value.children, {
         y: 80,
@@ -156,4 +187,40 @@ onUnmounted(() => {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.scroll-indicator {
+    width: 24px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-line {
+    width: 2px;
+    height: 10px;
+    background: white;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll-animation 2s infinite;
+}
+
+@keyframes scroll-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+}
 </style>

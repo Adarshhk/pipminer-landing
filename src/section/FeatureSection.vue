@@ -11,12 +11,13 @@
 
                 <h1
                     class="font-[400] text-[44px] lg:text-[81px] text-custom-white leading-tight lg:leading-[84px] font-primary max-w-5xl">
-                    No restrictions.<br />
-                    No integrations drama.<br />
+                    No tech tantrums. <br />
+                    No broker boundaries.<br />
                 </h1>
 
                 <p class=" font-secondary font-[500] text-[19.2px] text-custom-white">
-                    Connect instantly, execute flawlessly — our algo syncs smoothly with every major broker.
+                    Plug it in, and you’re good to go — trade without interruptions.
+
                 </p>
 
                 <Button @click="callPhone" title="book a call" />
@@ -35,7 +36,7 @@
 import Button from '@/components/Button.vue';
 
 function callPhone() {
-    window.location.href = `tel:${8016374064}`;
+    window.open('https://calendly.com/thepipsminer/30min', '_blank')
 }
 
 </script>

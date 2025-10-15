@@ -16,7 +16,7 @@
                 <div v-show="showFaq" class="overflow-hidden">
                     <div v-for="(faq, index) in faqs" :key="index" class="p-8 space-y-8">
                         <h2 class="font-bold text-white text-[32px]">{{ faq.question }}</h2>
-                        <p class="font-normal text-white/60 text-[20px]">{{ faq.answer }}</p>
+                        <p class="font-normal text-white/60 text-[20px] whitespace-pre-line">{{ faq.answer }}</p>
                     </div>
                 </div>
             </transition>
@@ -29,43 +29,46 @@
 <script setup>
 import { ref } from 'vue'
 
-const showFaq = ref(false);
+const showFaq = ref(false)
 
 const faqs = [
     {
-        question: 'What is PipMiner?',
-        answer: 'PipMiner is an advanced trading signal service that provides traders with high-probability trade ideas, detailed entry and exit points, and in-depth market analysis to help them make smarter and more informed manual trading decisions.'
+        question: '1. What is PipMiner?',
+        answer: 'PipMiner is a smart forex tool for the MT5 platform that automates your trading with great accuracy. We create strategies that aim for over 80% historical accuracy. It finds the best times to trade using strong, pre-set rules.'
     },
     {
-        question: 'Is PipMiner an automated trading bot?',
-        answer: 'No, PipMiner is not an automated bot. It’s a signal service that delivers real-time trade alerts and analysis directly to you, while you maintain full control over executing and managing trades on your brokerage platform.'
+        question: '2. Do I need coding or trading experience to use PipMiner?',
+        answer: 'Not at all. PipMiner is a plug-and-play system, once connected to your MT5 account, it handles the analysis and trade execution for you.'
     },
     {
-        question: 'What kind of strategy does PipMiner use?',
-        answer: 'PipMiner uses a combination of technical analysis, price action, and market structure to identify high-quality setups with strong risk-to-reward ratios. It avoids risky, automated strategies and focuses on consistent, disciplined trading.'
+        question: '3. Does automating this strategy require a separate server?',
+        answer: 'No, not at all. PipMiner is a fully managed, cloud-based platform. There is no need for you to configure or maintain any external servers. Our system runs 24/7, handling all the technical requirements seamlessly.'
     },
     {
-        question: 'Why does PipMiner avoid Grid and Martingale strategies?',
-        answer: 'Because safety comes first. Grid trading can lock up capital during volatility, and Martingale strategies increase risk after losses—both can lead to large drawdowns. PipMiner instead focuses on smart, calculated signals that protect your capital.'
+        question: '4. What strategy does PipMiner follow?',
+        answer: 'PipMiner focuses on smart market entries and controlled exits using trend behavior, volume logic, and price movement without risky grid or martingale systems.'
     },
     {
-        question: 'Is my capital at risk?',
-        answer: 'Yes, all trading carries risk, and losses are possible. While profits can’t be guaranteed, PipMiner helps you manage risk effectively by avoiding dangerous strategies, providing clear Stop Loss levels with each signal, and focusing on quality over quantity.'
+        question: '5. Is PipMiner an investment or advisory service?',
+        answer: 'No. PipMiner is not a financial advisory or investment service. We only provide a technical trading strategy compatible with MT5 brokers.'
     },
     {
-        question: 'How do I start using PipMiner?',
-        answer: 'To get started, ensure you have a broker account (like start trader or other), use a trading platform such as MetaTrader 4, MetaTrader 5, or TradingView, subscribe to a PipMiner plan, and start receiving signals via Telegram or your chosen channel to execute manually.'
+        question: '6. Do I need a specific broker to use PipMiner?',
+        answer: 'No, PipMiner works with any broker available on the MT5 platform. You can use it with your existing MT5 account.'
     },
     {
-        question: 'Which trading platforms are supported?',
-        answer: 'PipMiner signals can be used on all major platforms, including MetaTrader 4 (MT4), MetaTrader 5 (MT5), TradingView, cTrader, or any proprietary broker platform.'
+        question: '7. Does PipMiner guarantee returns?',
+        answer: 'Absolutely not. Trading involves risk, and past performance does not guarantee future results. PipMiner aims to deliver consistency, but outcomes may vary depending on market conditions.'
     },
     {
-        question: 'Do you offer a free trial?',
-        answer: 'Yes, PipMiner occasionally offers a limited free trial or a few complimentary signals so traders can experience the service’s quality before subscribing. You can check the website for any active trial offers or promotions.'
+        question: '8. Is PipMiner safe to use?',
+        answer: 'Yes. PipMiner only executes trades within your MT5 account under your full control. We never access your funds or personal credentials.'
+    },
+    {
+        question: '9. How can I get support after purchase?',
+        answer: 'You can reach our support team anytime at thepipsminer@gmail.com for setup help, troubleshooting, or general inquiries.'
     }
-];
-
+]
 </script>
 
 <style scoped>
@@ -79,7 +82,6 @@ const faqs = [
 .faq-dropdown-enter-to,
 .faq-dropdown-leave-from {
     max-height: 1000px;
-    /* large enough to fit content */
     opacity: 1;
 }
 

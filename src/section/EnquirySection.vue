@@ -73,7 +73,8 @@
             </div>
 
 
-            <div class="bg-gradient-to-r h-fit from-[#8E9EAB] to-[#EEF2F3] rounded-lg p-10 py-16 space-y-8 ">
+            <div
+                class="bg-gradient-to-r w-full lg:w-fit h-fit from-[#8E9EAB] to-[#EEF2F3] rounded-lg p-10 py-16 space-y-8 ">
                 <div class="space-y-4">
 
                     <p class="font-bold text-[19.2px] text-[#222222] font-secondary">₹10 Lakh+</p>

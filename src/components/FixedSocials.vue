@@ -3,18 +3,21 @@
         <button @click="openWhatsApp" class="p-2 bg-green-500">
             <img src="/svg/whatsapp.svg" class="w-8" alt="">
         </button>
-        <!-- <button class="p-2 bg-[#2da7e4]">
+        <button class="p-2 bg-[#2da7e4]">
             <img src="/svg/telegram.svg" class="w-8" alt="">
-        </button> -->
+        </button>
     </div>
 </template>
 
 <script setup>
 
 const openWhatsApp = () => {
-    window.open(`https://wa.me/${8016374064}`, '_blank');
+    window.open(`https://wa.me/8016374064`, '_blank');
 };
 
+const openTelegram = () => {
+    window.open(`https://t.me/+7D3MDyG_0DZhZWU1`, '_blank')
+}
 </script>
 
 <style lang="scss" scoped></style>

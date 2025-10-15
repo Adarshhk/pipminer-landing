@@ -1,17 +1,17 @@
 <template>
 
-  <!-- <VueLenis root> -->
-  <FixedSocials />
-  <HeroSection />
-  <!-- <QuoteSection /> -->
-  <WhySection />
-  <FeatureSection />
-  <EnquirySection />
-  <ProofSection />
-  <CtaSection />
-  <FAQSection />
-  <Footer />
-  <!-- </VueLenis> -->
+  <VueLenis root>
+    <FixedSocials />
+    <HeroSection />
+    <!-- <QuoteSection /> -->
+    <WhySection />
+    <FeatureSection />
+    <EnquirySection />
+    <ProofSection />
+    <CtaSection />
+    <FAQSection />
+    <Footer />
+  </VueLenis>
 </template>
 
 <script setup>

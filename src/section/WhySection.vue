@@ -6,7 +6,8 @@
         </p>
 
         <h1 class="text-center font-[400] text-[36px] lg:text-[81px] text-white leading-[84px] font-primary max-w-5xl">
-            Why We’re Different
+            be someone who doesn't follow the crowd.
+
         </h1>
 
         <div class="flex lg:flex-row flex-col items-center justify-center gap-6">
